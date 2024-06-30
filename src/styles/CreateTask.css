@@ -1,0 +1,174 @@
+.create-task-modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #303d4375;
+}
+.create-task-modal__content {
+  width: max-content;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 24px;
+  border-radius: 10px;
+  position: relative;
+}
+.create-task-modal__title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.create-task-modal__title label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000cf;
+}
+.create-task-modal__required {
+  color: #ff0000;
+}
+.create-task-modal__input {
+  height: 3rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 17px;
+  border: none;
+  box-shadow: 0px 0px 5px 0px #9b959f;
+}
+.create-task-modal__priority {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.create-task-modal__priority label {
+  font-weight: 600;
+  color: #000000cf;
+  font-size: 15px;
+}
+.create-task-modal__priority-options {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.create-task-modal__priority-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0px 0px 5px 0px #9b959f;
+  padding: 7px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.create-task-modal__priority-option span:nth-child(2) {
+  font-size: 12px;
+  color: #767575;
+  font-weight: 600;
+}
+
+.create-task-modal__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+  height: 15rem;
+}
+.create-task-modal__checklist label {
+  font-weight: 600;
+  color: #000000cf;
+  font-size: 15px;
+}
+.create-task-modal__checklist-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  overflow-y: auto;
+}
+.create-task-modal__checklist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 0px #9b959f;
+}
+.create-task-modal__checklist-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.create-task-modal__checklist-text {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+.create-task-modal__checklist-checkbox {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  accent-color: #17a2b8;
+}
+.create-task-modal__checklist-item svg {
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+}
+.create-task-modal__checklist-add-new {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 1rem;
+  color: #767575;
+  font-size: 17px;
+  cursor: pointer;
+}
+.create-task-modal__actions {
+  display: flex;
+  justify-content: space-between;
+}
+.create-task-modal__btn--date {
+  color: #767575;
+  padding: 14px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px 0px #9b959f;
+}
+.create-task-modal__btn {
+  padding: 14px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+.create-task-modal__btn-group {
+  display: flex;
+  gap: 20px;
+}
+.create-task-modal__btn--save {
+  border: none;
+  background-color: #17a2b8;
+  color: #fffffff0;
+}
+.create-task-modal__btn--cancel {
+  background-color: transparent;
+  border: 1px solid #cf3636;
+  color: #cf3636;
+}
+.date-picker {
+  position: absolute;
+  top: 10rem;
+  left: 8rem;
+}
+.selected {
+  background-color: #7675753d;
+}

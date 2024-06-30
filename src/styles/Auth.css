@@ -1,0 +1,137 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.welcome-section {
+  width: 60vw;
+  background-color: #17a2b8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7%;
+}
+
+.welcome-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.welcome-image > span {
+  display: flex;
+  background-color: #317f8b;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.welcome-image > img {
+  width: 160px;
+  position: absolute;
+  top: 32px;
+}
+
+.welcome-text {
+  text-align: center;
+  color: white;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section {
+  width: 40vw;
+}
+
+.form-section form {
+  height: 100vh;
+  padding: 6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-section form > h2 {
+  text-align: center;
+  color: #343434;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-section .input-container .form-input {
+  border: 1px solid #828282;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 7px;
+  height: 40px;
+  gap: 10px;
+  border-radius: 7px;
+  font-size: 20px;
+}
+.form-section form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-section form button {
+  border: none;
+  background-color: #17a2b8;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out 2ms;
+}
+
+.form-section form button:hover {
+  background-color: white;
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+}
+
+.form-section form p {
+  text-align: center;
+  color: #828282;
+}
+
+.login {
+  text-decoration: none;
+  background-color: white;
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out 2ms;
+  text-align: center;
+}
+.login:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.error {
+  color: red;
+}
